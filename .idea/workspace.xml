@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="51e39c36-3391-4dd6-ab3c-fd7c619415e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_25_162838_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_25_162838_create_articles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,14 +171,36 @@
       <workItem from="1606227919360" duration="3079000" />
       <workItem from="1606320459962" duration="1992000" />
       <workItem from="1606324257990" duration="6945000" />
-      <workItem from="1606734269868" duration="1846000" />
+      <workItem from="1606734269868" duration="5074000" />
+      <workItem from="1607469860285" duration="595000" />
+      <workItem from="1607948823086" duration="81000" />
+      <workItem from="1608138220100" duration="565000" />
+      <workItem from="1608156919594" duration="1997000" />
+      <workItem from="1608661372182" duration="3481000" />
+      <workItem from="1608715064532" duration="2744000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="309" y="47" key="#Inspections" timestamp="1608717450871">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="309" y="47" key="#Inspections/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1608717450871" />
     <state x="463" y="110" key="FileChooserDialogImpl" timestamp="1606323366681">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -182,9 +221,17 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1606323779574" />
+    <state x="492" y="92" key="NewPhpClassDialog" timestamp="1608717432173">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="492" y="92" key="NewPhpClassDialog/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1608717432173" />
     <state x="184" y="14" key="SettingsEditor" timestamp="1606323775191">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1606323775191" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1608717901716">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1608717901716" />
   </component>
 </project>
