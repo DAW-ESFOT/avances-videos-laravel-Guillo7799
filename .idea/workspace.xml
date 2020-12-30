@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="51e39c36-3391-4dd6-ab3c-fd7c619415e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +178,7 @@
       <workItem from="1608661372182" duration="3481000" />
       <workItem from="1608715064532" duration="2744000" />
       <workItem from="1609206215744" duration="3566000" />
-      <workItem from="1609276610356" duration="5287000" />
+      <workItem from="1609276610356" duration="7608000" />
     </task>
     <servers />
   </component>
