@@ -20,7 +20,8 @@ class ArticlesTableSeeder extends Seeder
         // Crear artículos ficticios en la tabla
         for($i = 0; $i < 50; $i++) {
             Article::create([
-                'title'=> $faker->sentence,'body'=> $faker->paragraph,
+                'title'=> $faker->sentence,
+                'body'=> $faker->paragraph,
                 ]);
         }
     }
