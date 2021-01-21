@@ -25,6 +25,7 @@ class ArticlesTableSeeder extends Seeder
             JWTAuth::attempt(['email' => $user->email, 'password' => '123123']);
         // Y ahora con este usuario creamos algunos articulos
             $num_articles = 5;
+            //en este punto mandamos la dirección de las imágenes
             $image_name = $faker->image('public/storage/articles', 400, 300, null, false);
             for ($j = 0; $j < $num_articles; $j++) {
                 Article::create([
