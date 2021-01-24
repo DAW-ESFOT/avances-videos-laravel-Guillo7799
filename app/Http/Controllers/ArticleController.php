@@ -10,7 +10,9 @@ use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller
 {
+
     public static $messages = [
+
         'required' => 'El campo :attribute es obligatorio.',
     ];
 
@@ -34,6 +36,7 @@ class ArticleController extends Controller
 
     public function store(Request $request)
     {
+
         $this->authorize('create', Article::class);
         $request->validate([
             'title' => 'required|string|unique:articles|max:255',
@@ -51,15 +54,18 @@ class ArticleController extends Controller
         $article->save();
 
         return response()->json(new ArticleResource($article), 201);
+
     }
 
     public function update(Request $request, Article $article)
     {
+
         $this->authorize('update',$article);
         $request->validate([
             'title' => 'required|string|unique:articles,title,' . $article->id . '|max:255',
             'body' => 'required',
             'category_id' => 'required|exists:categories,id'
+
         ], self::$messages);
         $article->update($request->all());
         return response()->json($article, 200);
