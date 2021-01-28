@@ -15,6 +15,7 @@ class Comment extends JsonResource
     public function toArray($request)
     {
         return [
+
           'id'=>$this->id,
           'text'=>$this->text,
           'user'=>"/api/users". $this->user_id,
@@ -22,5 +23,6 @@ class Comment extends JsonResource
           'created_at' => $this->created_at,
           'updated_at' => $this->updated_at,
         ];
+
     }
 }
