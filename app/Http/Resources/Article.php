@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Resources;
-use App\Category;
 use App\User;
+use App\Category;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class Article extends JsonResource
@@ -19,8 +19,8 @@ class Article extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'body' => $this->body,
-            'user'=>"/api/users/".$this->user_id,
-            'category'=>"/api/categories/".$this->category_id,
+            'users'=> '/api/users'. ($this->user_id),
+            'category'=> '/api/categories'. $this->category_id,
             'image'=>$this->image,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,

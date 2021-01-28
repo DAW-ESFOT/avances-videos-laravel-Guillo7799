@@ -24,7 +24,7 @@ class ArticlePolicy
      */
     public function viewAny(User $user)
     {
-        return $user->isGranted(User::ROLE_USER);
+        return true;//$user->isGranted(User::ROLE_USER);
     }
 
     /**
