@@ -2,25 +2,32 @@
 
 namespace App\Http\Controllers;
 
+
+
 use App\Comment;
 use App\Article;
 use App\Http\Resources\Comment as CommentResource;
+
 use App\Mail\NewComment;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class CommentController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
      * @param Article $article
      * @return \Illuminate\Http\JsonResponse
      */
+
     public function index(Article $article)
     {
         return response()->json(CommentResource::collection($article->comments->sortByDesc('created_at')), 200);
     }
+
 
     /**
      * Display the specified resource.
@@ -29,11 +36,13 @@ class CommentController extends Controller
      * @param \App\Comment $comment
      * @return \Illuminate\Http\JsonResponse
      */
+
     public function show(Article $article, Comment $comment)
     {
         $comment = $article->comments()->where('id', $comment->id)->firstOrFail();
         return response()->json(new CommentResource($comment), 200);
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -42,11 +51,13 @@ class CommentController extends Controller
      * @param Article $article
      * @return \Illuminate\Http\JsonResponse
      */
+
     public function store(Request $request, Article $article)
     {
         $request->validate([
             'text' => 'required|string'
         ]);
+
 
         $comment = $article->comments()->save(new Comment($request->all()));
 
@@ -75,6 +86,8 @@ class CommentController extends Controller
      */
     public function delete(Comment $comment)
     {
+
         //
     }
+
 }
