@@ -1,14 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\User;
 use App\Writer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use App\Http\Resources\User as UserResource;
 use JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
+use App\Http\Resources\User as UserResource;
+use Tymon\JWTAuth\JWTGuard;
+
+
 class UserController extends Controller
 {
     public function authenticate(Request $request)
